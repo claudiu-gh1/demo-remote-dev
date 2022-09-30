@@ -8,6 +8,9 @@ services:
     volumes:
        - ./backend:/usr/src/app/backend
     environment:
+      - CLAU.VAR=bla
+      - CLAU.VAR.SUBVAR=blabla
+      - CLAU.VAR.SUBVAR.SUBSUBVAR=blablabla
       - POSTGRES_HOST=db # name of the "db" service
       - POSTGRES_DB=bunny_books
       - POSTGRES_USER=postgres
